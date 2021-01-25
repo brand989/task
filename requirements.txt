@@ -5,6 +5,7 @@ bottle==0.12.19
 bottle-websocket==0.2.9
 cffi==1.14.4
 Django==3.1.5
+djangorestframework==3.12.2
 Eel==0.14.0
 future==0.18.2
 gevent==21.1.2
@@ -12,7 +13,7 @@ gevent-websocket==0.10.1
 greenlet==1.0.0
 macholib==1.14
 mysql-connector-python==8.0.23
-mysqlclient @ file:///C:/mysqlclient-1.4.6-cp38-cp38-win32.whl
+# mysqlclient @ file:///C:/mysqlclient-1.4.6-cp38-cp38-win32.whl
 pefile==2019.4.18
 protobuf==3.14.0
 pycparser==2.20

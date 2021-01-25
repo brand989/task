@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = '#^mlv^85rh^m*5#)+63^da41w7qs$(fg-2ng0i5f5g*6kajh)e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['task.dzygman.com','www.task.dzygman.com']
+ALLOWED_HOSTS = ['task.dzygman.com','www.task.dzygman.com', '127.0.0.1']
 
 
 # Application definition
@@ -76,10 +77,13 @@ WSGI_APPLICATION = 'task.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': os.path.join(BASE_DIR, 'u1151312_task'),
         'NAME': 'u1151312_task',
-	'USER':'u1151312_default',
-	'PASSWORD':'_2Pdc5wF',
-	'HOST': 'localhost',
+	    'USER':'u1151312_default',
+	    'PASSWORD':'_2Pdc5wF',
+	    'HOST': '37.140.192.71',
+        'Port': '3306'
+        
     }
 }
 

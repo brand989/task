@@ -7,7 +7,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "git+https://github.com/brand989/task.git"
   },
